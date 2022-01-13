@@ -2,8 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+.text-headline1 {
+  font: 700 5rem / normal Roboto;
+}
+.text-buttons {
+  font: 500 1rem/1.5rem Roboto;
+}
+.text-headline2 {
+  font: 700 2.5rem / normal Roboto;
+}
+.text-body2-bold {
+  font: 700 1rem/1.5rem Roboto;
+}
+.text-body2-regular {
+  font: 400 1rem/1.5rem Roboto;
+}
+.text-body1-regular {
+  font: 400 1.125rem/2.125rem Roboto;
+}
+.text-body1-bold {
+  font: 700 1.125rem/2.125rem Roboto;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
 .wrapper {
-  max-width: 1200px;
+  padding: 0 16px;
+  width: 100%;
+  max-width: 1056px;
   margin: 0 auto;
 }
 
@@ -13,4 +41,49 @@
 
 .company-logo img {
   @apply h-6 md:h-10;
+}
+
+.unified-platform {
+  background: linear-gradient(180deg, #fbfcfe 0%, #dde0e5 84.45%), #f6f9fc;
+}
+
+.unified-platform__grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 272px 453.33px 226px;
+  grid-template-rows: 86px 201px 126px 425px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.unified-platform__grid > div {
+  width: 100%;
+  height: 100%;
+}
+
+.unified-platform__grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.unified-platform__grid__credit-card {
+  grid-row: 2 / 3;
+}
+.unified-platform__grid__slack {
+  grid-row: 2 / 4;
+  grid-column: 2 / 3;
+}
+.unified-platform__grid__pos {
+  grid-row: 1 / 4;
+  grid-column: 3 / 4;
+}
+.unified-platform__grid__phone {
+  grid-row: 3 / 5;
+}
+.unified-platform__grid__rocket-rides {
+  grid-column: 2 / 5;
+}
+.divider {
+  clip-path: polygon(0 100%, 100% 0, 100% 100%, 0% 100%);
 }
