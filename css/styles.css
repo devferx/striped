@@ -183,3 +183,23 @@ html {
 .divider {
   clip-path: polygon(0 100%, 100% 0, 100% 100%, 0% 100%);
 }
+
+.button {
+  @apply flex gap-2 items-center my-8 px-4 py-2 rounded-full  text-buttons;
+}
+
+.card {
+  @apply flex flex-col items-start gap-6;
+}
+.card__body {
+  @apply flex flex-col items-start gap-1;
+}
+.card__body__title {
+  @apply pl-4 border-l-[2px] border-blue text-body2-bold;
+}
+.card__body__desc {
+  @apply pl-[18px];
+}
+.card__link {
+  @apply flex gap-2 items-center pl-[18px] pr-4 py-2 text-blue text-buttons;
+}

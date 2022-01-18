@@ -481,6 +481,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 2rem;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mt-52 {
   margin-top: 13rem;
 }
@@ -513,12 +518,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
+.max-w-\[436px\] {
+  max-width: 436px;
+}
+
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
 .flex-col {
   flex-direction: column;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-center {
@@ -533,12 +550,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 1rem;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .gap-6 {
   gap: 1.5rem;
 }
 
-.gap-2 {
-  gap: 0.5rem;
+.gap-24 {
+  gap: 6rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .gap-y-16 {
@@ -547,6 +572,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-primary-buttons {
@@ -564,9 +594,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(9 37 64 / var(--tw-bg-opacity));
 }
 
-.bg-white {
+.bg-blue {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: rgb(1 212 255 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-20 {
@@ -578,14 +608,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 2rem;
 }
 
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .py-20 {
@@ -593,13 +623,27 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 5rem;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
 }
 
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .font-bold {
@@ -619,6 +663,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-purple {
   --tw-text-opacity: 1;
   color: rgb(99 92 255 / var(--tw-text-opacity));
+}
+
+.text-blue {
+  --tw-text-opacity: 1;
+  color: rgb(1 212 255 / var(--tw-text-opacity));
+}
+
+.text-dark-blue {
+  --tw-text-opacity: 1;
+  color: rgb(9 37 64 / var(--tw-text-opacity));
 }
 
 .text-headline1 {
@@ -831,6 +885,59 @@ html {
           clip-path: polygon(0 100%, 100% 0, 100% 100%, 0% 100%);
 }
 
+.button {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font: 500 1rem/1.5rem Roboto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+}
+
+.card__body__title {
+  border-left-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(1 212 255 / var(--tw-border-opacity));
+  padding-left: 1rem;
+  font: 700 1rem/1.5rem Roboto;
+}
+
+.card__body__desc {
+  padding-left: 18px;
+}
+
+.card__link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 18px;
+  padding-right: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(1 212 255 / var(--tw-text-opacity));
+  font: 500 1rem/1.5rem Roboto;
+}
+
 @media (min-width: 768px) {
   .md\:mt-24 {
     margin-top: 6rem;
@@ -860,6 +967,10 @@ html {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
   .md\:gap-8 {
     gap: 2rem;
   }
@@ -871,6 +982,11 @@ html {
   .md\:py-40 {
     padding-top: 10rem;
     padding-bottom: 10rem;
+  }
+
+  .md\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .md\:pt-20 {
