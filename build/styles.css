@@ -522,12 +522,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 436px;
 }
 
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.max-w-\[620px\] {
+  max-width: 620px;
 }
 
-.flex-row {
-  flex-direction: row;
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -623,11 +623,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 5rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 .pt-4 {
   padding-top: 1rem;
 }
@@ -673,6 +668,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-dark-blue {
   --tw-text-opacity: 1;
   color: rgb(9 37 64 / var(--tw-text-opacity));
+}
+
+.text-secondary-buttons {
+  --tw-text-opacity: 1;
+  color: rgb(10 37 64 / var(--tw-text-opacity));
+}
+
+.text-primary-buttons {
+  --tw-text-opacity: 1;
+  color: rgb(17 37 62 / var(--tw-text-opacity));
 }
 
 .text-headline1 {
@@ -921,6 +926,11 @@ html {
   font: 700 1rem/1.5rem Roboto;
 }
 
+.card__body__title__boder-purple {
+  --tw-border-opacity: 1;
+  border-color: rgb(99 92 255 / var(--tw-border-opacity));
+}
+
 .card__body__desc {
   padding-left: 18px;
 }
@@ -955,6 +965,10 @@ html {
     height: 16rem;
   }
 
+  .md\:h-40 {
+    height: 10rem;
+  }
+
   .md\:w-\[620px\] {
     width: 620px;
   }
@@ -982,11 +996,6 @@ html {
   .md\:py-40 {
     padding-top: 10rem;
     padding-bottom: 10rem;
-  }
-
-  .md\:py-20 {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
   }
 
   .md\:pt-20 {
