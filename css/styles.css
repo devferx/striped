@@ -9,7 +9,7 @@
   font: 500 1rem/1.5rem Roboto;
 }
 .text-headline2 {
-  font: 700 2.5rem / normal Roboto;
+  font: 700 2.5rem / normal Roboto !important;
 }
 .text-body2-bold {
   font: 700 1rem/1.5rem Roboto;
@@ -180,6 +180,20 @@ html {
 .unified-platform__grid__rocket-rides {
   grid-column: 2 / 5;
 }
+
+.global {
+  background: url("../assets/earth.png"), #092540;
+  background-size: 200px;
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+  .global {
+    background-size: contain;
+  }
+}
+
 .divider {
   clip-path: polygon(0 100%, 100% 0, 100% 100%, 0% 100%);
 }

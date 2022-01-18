@@ -526,6 +526,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 620px;
 }
 
+.max-w-\[528px\] {
+  max-width: 528px;
+}
+
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -631,6 +635,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 5rem;
 }
 
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -670,14 +678,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(9 37 64 / var(--tw-text-opacity));
 }
 
-.text-secondary-buttons {
-  --tw-text-opacity: 1;
-  color: rgb(10 37 64 / var(--tw-text-opacity));
-}
-
 .text-primary-buttons {
   --tw-text-opacity: 1;
   color: rgb(17 37 62 / var(--tw-text-opacity));
+}
+
+.text-secondary-buttons {
+  --tw-text-opacity: 1;
+  color: rgb(10 37 64 / var(--tw-text-opacity));
 }
 
 .text-headline1 {
@@ -689,7 +697,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .text-headline2 {
-  font: 700 2.5rem / normal Roboto;
+  font: 700 2.5rem / normal Roboto !important;
 }
 
 .text-body2-bold {
@@ -883,6 +891,19 @@ html {
 
 .unified-platform__grid__rocket-rides {
   grid-column: 2 / 5;
+}
+
+.global {
+  background: url("../assets/earth.png"), #092540;
+  background-size: 200px;
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+  .global {
+    background-size: contain;
+  }
 }
 
 .divider {
