@@ -15,6 +15,61 @@
     <link rel="stylesheet" href="./build/styles.css" />
   </head>
   <body>
+    <header class="header">
+      <nav class="hidden md:block relative py-8 z-10">
+        <div class="wrapper flex justify-between items-center">
+          <img src="./assets/logo.png" alt="Logo" />
+          <ul class="flex gap-4">
+            <li class="w-[103px] text-body2-bold text-white">
+              <a href="/">Products</a>
+            </li>
+            <li class="w-[103px] text-body2-bold text-white">
+              <a href="/">Developers</a>
+            </li>
+            <li class="w-[103px] text-body2-bold text-white">
+              <a href="/">Company</a>
+            </li>
+            <li class="w-[103px] text-body2-bold text-white">
+              <a href="/">Pricing</a>
+            </li>
+          </ul>
+
+          <button
+            class="text-white text-buttons bg-white bg-opacity-20 px-4 py-2 rounded-full"
+          >
+            Sign in <span>></span>
+          </button>
+        </div>
+      </nav>
+      <div class="header__bg"></div>
+      <div class="wrapper">
+        <div
+          class="header__content flex flex-col gap-6 md:gap-8 w-full md:w-[620px]"
+        >
+          <h2 class="header__content__title mt-52 md:mt-24">
+            Payments infrastructure for the internet
+          </h2>
+          <p class="text-body1-regular text-subtitles">
+            Millions of businesses of all sizes—from startups to large
+            enterprises—use Stripe’s software and APIs to accept payments, send
+            payouts, and manage their businesses online.
+          </p>
+          <div class="flex gap-4 items-center">
+            <button
+              class="bg-primary-buttons py-2 px-4 text-buttons text-white rounded-full"
+            >
+              Start now >
+            </button>
+            <a class="text-buttons" href="/">Contact sales ></a>
+          </div>
+        </div>
+      </div>
+      <img
+        class="header__hero hidden xl:block"
+        src="./assets/hero.png"
+        alt="Hero"
+      />
+    </header>
     <div class="wrapper">
       <!-- Company Logos -->
       <section
