@@ -211,7 +211,7 @@ html {
 .card__body__title {
   @apply pl-4 border-l-[2px] border-blue text-body2-bold;
 }
-.card__body__title__boder-purple {
+.card__body__title--boder-purple {
   @apply border-purple;
 }
 .card__body__desc {

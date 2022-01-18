@@ -603,6 +603,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(1 212 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#F6F9FC\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(246 249 252 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-20 {
   --tw-bg-opacity: 0.2;
 }
@@ -625,6 +630,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.px-\[18px\] {
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
 .pt-4 {
@@ -686,6 +701,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-secondary-buttons {
   --tw-text-opacity: 1;
   color: rgb(10 37 64 / var(--tw-text-opacity));
+}
+
+.text-headlines {
+  --tw-text-opacity: 1;
+  color: rgb(57 57 57 / var(--tw-text-opacity));
 }
 
 .text-headline1 {
@@ -947,7 +967,7 @@ html {
   font: 700 1rem/1.5rem Roboto;
 }
 
-.card__body__title__boder-purple {
+.card__body__title--boder-purple {
   --tw-border-opacity: 1;
   border-color: rgb(99 92 255 / var(--tw-border-opacity));
 }
@@ -1017,6 +1037,11 @@ html {
   .md\:py-40 {
     padding-top: 10rem;
     padding-bottom: 10rem;
+  }
+
+  .md\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .md\:pt-20 {
